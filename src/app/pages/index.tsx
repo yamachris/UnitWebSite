@@ -28,13 +28,14 @@ export default function Index() {
             <main id="main">
                 <Page/>
                 <Counts/>
+                <Cta/>
                 <Clients/>
 
                 <Testimonials />
 
                 <Services/>
 
-                <Cta/>
+
 
                 <Portfolio/>
 

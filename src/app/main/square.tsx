@@ -1,9 +1,8 @@
-import {Square} from "@/app/pages/main/main";
+import {Square} from "@/app/main/main";
 
 type SquareProps = {
     square: Square
 };
-
 
 export function Square({square}: SquareProps) {
     return (

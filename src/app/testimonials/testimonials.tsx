@@ -3,12 +3,13 @@
 import React from "react";
 import useSWR from 'swr';
 import {UserType} from "@/app/pages";
+import {Testimonial} from "@/app/testimonials/testimonial";
 
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 export default function Testimonials() {
 
-    const { data, error } = useSWR('https://jsonplaceholder.typicode.com/users?_limit=5', fetcher)
+    const { data, error } = useSWR('https://jsonplaceholder.typicode.com/users?_limit=3', fetcher)
 
     if (error) return <div>Error loading data</div>;
     if (!data) return <div>Loading...</div>;
@@ -24,7 +25,7 @@ export default function Testimonials() {
                 </div>
                 <div className="testimonials-slider swiper">
                     <div className="swiper-wrapper">
-                        {data && data?.map((user: UserType) => <p key={user.id}>fdfdfdf</p>)}
+                        {data && data?.map((user: UserType) => <Testimonial key={user.id} user={user}></Testimonial>)}
                     </div>
                     <div className="swiper-pagination"></div>
                 </div>
