@@ -11,6 +11,7 @@ import {Pricing} from "@/app/pricing/pricing";
 import {Faq} from "@/app/faq/faq";
 import {Footer} from "@/app/footer/footer";
 import React from "react";
+import {Contact} from "@/app/contact/contact";
 
 export type UserType = {
     id: string;
@@ -21,6 +22,7 @@ export type HomeProps = {
 };
 
 export default function Index() {
+
     return (
         <>
             <Header/>
@@ -35,15 +37,13 @@ export default function Index() {
 
                 <Services/>
 
-
-
                 <Portfolio/>
 
                 <Pricing/>
 
                 <Faq/>
 
-                {/*<Contact />*/}
+                <Contact />
             </main>
 
 

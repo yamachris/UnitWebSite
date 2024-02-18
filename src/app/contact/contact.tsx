@@ -11,9 +11,10 @@ export function Contact(){
                 </div>
 
                 <div>
-                    {/*<iframe*/}
-                    {/*    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"*/}
-                    {/*    allowFullScreen={true}></iframe>*/}
+                    <iframe
+                        style={{width:'100%', height: 300 }}
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                        allowFullScreen={true}></iframe>
                 </div>
 
                 <div className="row mt-5">
@@ -21,19 +22,19 @@ export function Contact(){
                     <div className="col-lg-4">
                         <div className="info">
                             <div className="address">
-                                <i className="bi bi-geo-alt"></i>
+                                <i className="fa-regular fa-map"></i>
                                 <h4>Location:</h4>
                                 <p>A108 Adam Street, New York, NY 535022</p>
                             </div>
 
                             <div className="email">
-                                <i className="bi bi-envelope"></i>
+                                <i className="fa-solid fa-envelope"></i>
                                 <h4>Email:</h4>
                                 <p>info@example.com</p>
                             </div>
 
                             <div className="phone">
-                                <i className="bi bi-phone"></i>
+                                <i className="fa-solid fa-phone"></i>
                                 <h4>Call:</h4>
                                 <p>+1 5589 55488 55s</p>
                             </div>
