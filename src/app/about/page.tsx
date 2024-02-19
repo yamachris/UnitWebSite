@@ -1,6 +1,6 @@
 export function Page(){
     return(
-        <section id="about" className="about">
+        <section id="about" className="about mt-2">
             <div className="container">
 
                 <div className="section-title">

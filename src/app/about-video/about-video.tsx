@@ -1,9 +1,9 @@
 import Image from "next/image";
-import about from "../../../../public/about-video.jpg";
+import about from "../../../public/about-video.jpg";
 
 export function AboutVideo(){
     return (
-        <section id="about-video" className="about-video">
+        <section id="about-video" className="about-video mt-2">
             <div className="container">
 
                 <div className="row">

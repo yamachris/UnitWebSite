@@ -11,11 +11,11 @@ export function Counts(){
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setNumber1((t) => t < 36 ? t + 1 : t);
+            setNumber1((t) => t < 106 ? t + 1 : t);
             setNumber2((t) => t < 56 ? t + 1 : t);
             setNumber3((t) => t < 29 ? t + 1 : t);
             setNumber4((t) => t < 78 ? t + 1 : t);
-        }, 10);
+        }, 100);
         return () => {
             clearInterval(timer);
         };

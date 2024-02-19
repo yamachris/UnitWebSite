@@ -12,14 +12,11 @@ import {Faq} from "@/app/faq/faq";
 import {Footer} from "@/app/footer/footer";
 import React from "react";
 import {Contact} from "@/app/contact/contact";
+import {AboutVideo} from "@/app/about-video/about-video";
 
 export type UserType = {
     id: string;
 }
-
-export type HomeProps = {
-    users: UserType[];
-};
 
 export default function Index() {
 
@@ -30,25 +27,17 @@ export default function Index() {
             <main id="main">
                 <Page/>
                 <Counts/>
+                <AboutVideo />
                 <Cta/>
                 <Clients/>
-
-                <Testimonials />
-
+                <Testimonials/>
                 <Services/>
-
                 <Portfolio/>
-
                 <Pricing/>
-
                 <Faq/>
-
-                <Contact />
+                <Contact/>
             </main>
-
-
             <Footer/>
-
         </>
     );
 }

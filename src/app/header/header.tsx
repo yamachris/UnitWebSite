@@ -1,10 +1,18 @@
+import logo from "../../../public/logo.svg";
+import Image from "next/image";
+
 export default function Header() {
     return (
         <div id="header" className="fixed-top">
             <div className="container d-flex align-items-center justify-content-between">
 
-                <h1 className="logo"><a href="index.html">OnePage</a></h1>
-
+                <h1 className="logo">
+                    <Image
+                        src={logo}
+                        className="img-fluid"
+                        alt="logo du site"
+                    />
+                </h1>
 
                 <nav id="navbar" className="navbar">
                     <ul>
