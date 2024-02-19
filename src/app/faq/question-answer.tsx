@@ -26,8 +26,11 @@ export default function QuestionAnswer({questionAnswer}: QuestionAnswerProps) {
             <div className="d-flex align-items-center">
                 <i className="p-2 fa-regular fa-circle-question"></i>
                 <a className="p-2" onClick={toggleContent}>{questionAnswer.question}</a>
-                {!isShown && (<i style={{ cursor: 'pointer' }} onClick={toggleContent} className="ml-auto p-2 fa-solid fa-angle-down"></i>)}
-                {isShown && (<i style={{ cursor: 'pointer' }} onClick={toggleContent} className="ml-auto p-2 fa-solid fa-angle-up"></i>)}
+                <i
+                style={{cursor: 'pointer'}}
+                onClick={toggleContent}
+                className={`ml-auto p-2 fa-solid ${isShown ? 'fa-angle-up' : 'fa-angle-down'}`}
+            ></i>
             </div>
             {isShown && (
                 <div id={`faq-list-${id}`}>
